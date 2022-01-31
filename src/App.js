@@ -1,5 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from './Pages/Home';
+import Movies from './Pages/Movies';
+import Details from './Pages/Details';
+
 
 function App() {
   return (
@@ -10,10 +14,10 @@ function App() {
             <Home />
           </Route>
           <Route exact path='/filmes/:id'>
-            <Filmes />
+            <Movies />
           </Route>
           <Route exact path='/filmes/detalhes'>
-            <Detalhes />
+            <Details />
           </Route>
       </Switch>
     </Router>
