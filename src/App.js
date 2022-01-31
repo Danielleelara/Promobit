@@ -1,25 +1,26 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './Pages/Home';
 import Movies from './Pages/Movies';
+import NavBar from './Components/NavBar';
 import Details from './Pages/Details';
 
 
 function App() {
   return (
     <Router>
-      <AppBar/>
-      <Switch>
+      <NavBar/>
+      <Routes>
           <Route exact path='/'>
             <Home />
           </Route>
-          <Route exact path='/filmes/:id'>
+          <Route exact path='/movies/:id'>
             <Movies />
           </Route>
-          <Route exact path='/filmes/detalhes'>
-            <Details />
+          <Route exact path='/movies/details'>
+          <Details />
           </Route>
-      </Switch>
+      </Routes>
     </Router>
   );
 }

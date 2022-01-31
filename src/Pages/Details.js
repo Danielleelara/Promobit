@@ -1,4 +1,3 @@
-import styles from './Pages/Details.module.css';
 
 const Details = () => {
     return ( 
