@@ -1,26 +1,40 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './Pages/Home';
 import Movies from './Pages/Movies';
 import NavBar from './Components/NavBar';
 import Details from './Pages/Details';
+import api from './api';
 
-
+const api_key = "7cbb88dd714f84168b91799865f574d3";
 function App() {
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    async function getCharacters() {
+      const response = await api.get(`/movie/popular`, {
+        params: {api_key}
+      });
+      setMovies(response.data.results);
+    }
+    getCharacters();
+  }, []);
+  
   return (
     <Router>
-      <NavBar/>
-      <Routes>
+      <NavBar movies={movies}/>
+      <Switch>
           <Route exact path='/'>
             <Home />
           </Route>
           <Route exact path='/movies/:id'>
-            <Movies />
+            <Movies movies={movies}/>
           </Route>
           <Route exact path='/movies/details'>
           <Details />
           </Route>
-      </Routes>
+      </Switch>
     </Router>
   );
 }
