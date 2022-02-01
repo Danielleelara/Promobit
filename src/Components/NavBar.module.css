@@ -1,0 +1,11 @@
+.navbar_container {
+    background-color:midnightblue;
+    color: #FFF;
+    display: flex;
+    align-items: column;
+    font-size: 2em;
+}
+.title{
+    display: block;
+    margin-bottom: 20%;
+}

@@ -1,7 +1,12 @@
 const Card = ({movies}) => {
     return ( 
         <div>
-            {movies.map((movie) => <p>{movie.original_title}</p>)}
+            {movies.map((movie) => (
+                <div>
+                    <p>{movie.original_title}</p>
+                    <img src={movie.backdrop_path} alt="figura" />
+                </div>
+            ))}
 
         </div>
      );

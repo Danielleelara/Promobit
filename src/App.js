@@ -6,6 +6,7 @@ import Movies from './Pages/Movies';
 import NavBar from './Components/NavBar';
 import Details from './Pages/Details';
 import api from './api';
+import Footer from './Components/Footer';
 
 const api_key = "7cbb88dd714f84168b91799865f574d3";
 function App() {
@@ -15,12 +16,13 @@ function App() {
     async function getCharacters() {
       const response = await api.get(`/movie/popular`, {
         params: {api_key}
+       
       });
       setMovies(response.data.results);
     }
     getCharacters();
   }, []);
-  
+
   return (
     <Router>
       <NavBar movies={movies}/>
@@ -28,13 +30,14 @@ function App() {
           <Route exact path='/'>
             <Home />
           </Route>
-          <Route exact path='/movies/:id'>
+          <Route exact path='/movies/'>
             <Movies movies={movies}/>
           </Route>
-          <Route exact path='/movies/details'>
-          <Details />
+          <Route exact path='/details'>
+          <Details movies={movies}/>
           </Route>
       </Switch>
+      <Footer/>
     </Router>
   );
 }
