@@ -3,7 +3,7 @@ import styles from './Filter.module.css'
 const Filter = () => {
     return ( 
         <div>
-            <p>FILTRE POR:</p>
+            <h4>FILTRE POR:</h4>
         </div>
      );
 }

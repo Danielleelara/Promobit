@@ -1,11 +1,36 @@
-.navbar_container {
-    background-color:midnightblue;
-    color: #FFF;
-    display: flex;
-    align-items: column;
-    font-size: 2em;
+navbar_container{
+    height: 25em;
 }
-.title{
-    display: block;
-    margin-bottom: 20%;
+.navbar_title {
+    background-color: #5C16C5;
+    color: #FFFFFF;
+    font-size: 2em;
+    font-weight: 500%;
+    position: center;
+    width: 40em;
+    height: 11.7em; 
+    top: 15.8em;;
+
+}
+.navbar_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2D0C5E;
+    color: #FFFFFF;
+    padding: 1em;
+    position: absolute;
+    width: 78em;
+    height: 20em;
+    top: 3.3em;
+}
+.text1{
+    font-size: 2.5em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    letter-spacing: -0.005em;
+    width: 50%;
 }

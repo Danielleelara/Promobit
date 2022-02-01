@@ -1,7 +1,5 @@
 .movies {
     display: flex;
     align-items: center;
-    background-color: blue;
-    width: 80%;
-    
+    justify-content: center;
 }

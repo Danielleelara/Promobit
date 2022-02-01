@@ -5,7 +5,6 @@ const Movies = ({movies}) => {
    
     return ( 
         <div className={styles.movies}>
-            <p>Movies</p>  
             <Card movies={movies}/>
         </div>
      );
