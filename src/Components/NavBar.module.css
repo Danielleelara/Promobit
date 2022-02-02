@@ -7,9 +7,11 @@ navbar_container{
     font-size: 2em;
     font-weight: 500%;
     position: center;
-    width: 40em;
+    width: 42em;
     height: 11.7em; 
-    top: 15.8em;;
+    top: 15.8em;
+    font-weight: bold;
+    padding: 0.5em;
 
 }
 .navbar_text{
@@ -20,7 +22,7 @@ navbar_container{
     color: #FFFFFF;
     padding: 1em;
     position: absolute;
-    width: 78em;
+    width: 84em;
     height: 20em;
     top: 3.3em;
 }
@@ -33,4 +35,10 @@ navbar_container{
     text-align: center;
     letter-spacing: -0.005em;
     width: 50%;
+}
+
+.navbar_title button{
+    width: 5em;
+    height: 1.8em;
+    border-radius: 25%;
 }

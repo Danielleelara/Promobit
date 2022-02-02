@@ -3,21 +3,16 @@ const Card = ({movies}) => {
     return ( 
         <div>
             {movies.map((movie) => (
-                <div>
-                    <ul className={styles.card} key={movies.id}>
-                        <li
-                            component="img"
-                            height="400"
-                            margin="20"
-                            image={movies.backdrop_path}
-                            alt="figura"
-                        >
+                <div className={styles.card_conatiner}>
+                    <ul className={styles.card} >
+                        <li>
+                            <img src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}/>
                         </li>
                         <li>
-                            {`Nome: ${movie.original_title}`}
+                            {movie.original_title}
                         </li>
                         <li>
-                            {`Detalhes: ${movie.backdrop_path}`}
+                            {movie.release_date}
                         </li>
                     </ul>
                 </div>

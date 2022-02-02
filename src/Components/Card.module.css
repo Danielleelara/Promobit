@@ -1,6 +1,11 @@
-.card{
+.card_container{
+    display: flex;
+    justify-content: center;
+}
 
+.card{
     border: 0.01em solid #E7E7E7;
     box-sizing: border-box;
     border-radius: 0.5em;
+    list-style-type: none;
 }
