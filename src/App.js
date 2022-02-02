@@ -33,8 +33,8 @@ function App() {
           <Route exact path='/movies/'>
             <Movies movies={movies}/>
           </Route>
-          <Route exact path='/details'>
-          <Details movies={movies}/>
+          <Route exact path='/details/:id'>
+          <Details/>
           </Route>
       </Switch>
       <Footer/>

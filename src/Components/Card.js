@@ -1,18 +1,20 @@
 import styles from './Card.module.css'
-const Card = ({movies}) => {
+import moment from 'moment';
+const Card = ({movies, movie}) => {
+
     return ( 
-        <div>
+        <div className={styles.card_container}>
             {movies.map((movie) => (
-                <div className={styles.card_conatiner}>
+                <div>
                     <ul className={styles.card} >
                         <li>
-                            <img src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}/>
+                            <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}` } alt={movie.original_title} />
                         </li>
                         <li>
                             {movie.original_title}
                         </li>
                         <li>
-                            {movie.release_date}
+                           {moment(`${movie.release_date}`).format("DD/MM/YYYY")}
                         </li>
                     </ul>
                 </div>

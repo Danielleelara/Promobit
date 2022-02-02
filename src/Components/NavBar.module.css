@@ -1,18 +1,18 @@
 navbar_container{
-    height: 25em;
+    position: absolute;
+    width: 17%;
+    height: 26%;
+    left: 50%;
+    top: 50%;
 }
-.navbar_title {
+.navbar_inicio{
     background-color: #5C16C5;
+    width: 86.45em;
+}
+.nav_img {
+    width: 10em;
     color: #FFFFFF;
-    font-size: 2em;
-    font-weight: 500%;
-    position: center;
-    width: 42em;
-    height: 11.7em; 
-    top: 15.8em;
-    font-weight: bold;
-    padding: 0.5em;
-
+    margin: 1em 5em;
 }
 .navbar_text{
     display: flex;
@@ -21,8 +21,8 @@ navbar_container{
     background-color: #2D0C5E;
     color: #FFFFFF;
     padding: 1em;
-    position: absolute;
-    width: 84em;
+    
+    width: 100%;
     height: 20em;
     top: 3.3em;
 }

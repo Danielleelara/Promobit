@@ -1,30 +1,30 @@
 import { useState, useEffect } from "react";
 import api from "../api";
+import { useParams } from "react-router-dom";
+
 
 const api_key = "7cbb88dd714f84168b91799865f574d3";
-const Details = ({movies}) => {
-    const [details, setDetails] = useState([]);
-
+const Details = () => {
+    const [movie, setMovie] = useState(null);
+    const { id } = useParams();
+    
     useEffect(() => {
-      async function getCharacters() {
-        const response = await api.get(`/movie/{movie_id}.`, {
+      async function getMovieDetails() {
+        const response = await api.get(`/movie/${id}`, {
           params: {api_key}
         });
-        console.log(response.data.results)
-        setDetails(response.data.results);
+        
+        setMovie(response.data);
       }
-      getCharacters();
-    }, []);
 
-    // GET /movie/{movie_id}.
+      getMovieDetails();
+    }, [id]);
+
+
     return ( 
-        <div>
-            <p>Details</p>
-            {details.map((detail) => (
-                <div>
-                    <p>Detalhes</p>
-                </div>
-            ))}
+        <div >
+            <p>Details: {`${movie}`}</p>
+            
         </div>
      );
 }
