@@ -13,6 +13,7 @@ navbar_container{
     width: 10em;
     color: #FFFFFF;
     margin: 1em 5em;
+    cursor: pointer;
 }
 .navbar_text{
     display: flex;
