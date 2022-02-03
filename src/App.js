@@ -5,7 +5,7 @@ import Movies from './Pages/Movies';
 import Details from './Pages/Details';
 import api from './api';
 import Footer from './Components/Footer';
-import NavBar from './Components/NavBar';
+import Header from './Components/Header';
 
 const api_key = "7cbb88dd714f84168b91799865f574d3";
 function App({goBack}) {
@@ -18,7 +18,7 @@ function App({goBack}) {
         params: {api_key, language:"pt-BR"}
       });
       setMovies(response.data.results);
-      setMovieFiltered(response.data.results)
+      
     }
     getCharacters();
   }, []);
@@ -31,10 +31,10 @@ function App({goBack}) {
 
   return (
     <Router>
-        <NavBar goBack={goBack} movies={movies} onFilterChange={handleSelectedGenre}/>
-      <Switch>
+      <Header goBack={goBack} />
+      <Switch >
           <Route exact path='/'>
-            <Movies movies={movies} />
+            <Movies movies={movies}  />
           </Route>
           <Route exact path='/details/:id'>
           <Details goBack={goBack}/>

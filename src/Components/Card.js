@@ -1,6 +1,6 @@
 import styles from './Card.module.css'
 import moment from 'moment';
-const Card = ({movies, movie}) => {
+const Card = ({movies}) => {
 
     return ( 
         <div className={styles.card_container}>

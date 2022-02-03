@@ -1,12 +1,16 @@
 import styles from './Movies.module.css'
 import Card from "../Components/Card";
+import NavBar from '../Components/NavBar';
 
-const Movies = ({movies, movie}) => {
+const Movies = ({movies, onFilterChange }) => {
    
     return ( 
-        <div className={styles.movies}>
-            <Card movies={movies}/>
-        </div>
+        <>
+            <NavBar/>
+            <div className={styles.movies}>
+                <Card movies={movies}/>
+            </div>
+        </>
      );
 }
 export default Movies;
