@@ -1,9 +1,10 @@
+
 import styles from './Button.module.css'
 
-const Button = ({movies}) => {
+const Button = ({genres, onFilterChange}) => {
     return ( 
-        <div className={styles.button}>
-            {movies.map((movie) => <button>{movie.original_title}</button> )}
+        <div className={styles.button} >
+            {genres.map((genre) => <button onClick={()=> onFilterChange(genre.id)} key={genre.id}>{genre.name}</button> )}
         </div>
      );
 }
