@@ -6,7 +6,7 @@ const Movies = ({movies, onFilterChange }) => {
    
     return ( 
         <>
-            <NavBar/>
+            <NavBar onFilterChange={onFilterChange}/>
             <div className={styles.movies}>
                 <Card movies={movies}/>
             </div>

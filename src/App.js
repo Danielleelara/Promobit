@@ -8,7 +8,7 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 
 const api_key = "7cbb88dd714f84168b91799865f574d3";
-function App({goBack}) {
+function App({goBack, genres}) {
   const [movies, setMovies] = useState([]);
   const [movieFiltered, setMovieFiltered] = useState({})
 
@@ -18,7 +18,8 @@ function App({goBack}) {
         params: {api_key, language:"pt-BR"}
       });
       setMovies(response.data.results);
-      
+    
+     
     }
     getCharacters();
   }, []);
@@ -34,10 +35,10 @@ function App({goBack}) {
       <Header goBack={goBack} />
       <Switch >
           <Route exact path='/'>
-            <Movies movies={movies}  />
+            <Movies movies={movies} onFilterChange={handleSelectedGenre} />
           </Route>
           <Route exact path='/details/:id'>
-          <Details goBack={goBack}/>
+          <Details goBack={goBack} genres={genres}/>
           </Route>
       </Switch>
       <Footer/>
