@@ -35,10 +35,6 @@ npm i react-router-dom@5.2.0
 
 npm i axios
 
-**5.** Agora instale o styled components com o comando a seguir:
-
- npm install --save styled-components
-
-**6.** Agora é só rodar o comando abaixo para rodar o projeto no Browser
+**5.** Agora é só rodar o comando abaixo para rodar o projeto no Browser
 
 npm start
