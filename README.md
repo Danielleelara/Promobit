@@ -8,21 +8,37 @@ Implementei este projeto para avaliação na etapa de seleção para a vaga de f
 
 ## O projeto
 
-O projeto foi desenvolvido em ReactJs a partir da criação de uma SPA, usando react-routes para a implementação das rotas, a biblioteca momentjs para a formatação de data e o axios para a busca dos dados na Api. 
+O projeto foi desenvolvido em ReactJs a partir da criação de uma SPA, usando react-routes para a implementação das rotas, a biblioteca momentjs para a formatação das datas e o axios para a busca dos dados na Api. 
 
 ## Requisitos de ambiente e dependências
 
 * Node v17.3.0 (npm v8.3.0) 
-* Axios (será instalado rodando o comando 2)
 * Moment(será instalado rodando o comando 2)
-* React-router-dom (será instalado rodando o comando 2)
+* React-router-dom (será instalado rodando o comando 3)
+* Axios (será instalado rodando o comando 4)
 
 ## Configuração do ambiente
 
-O primeiro passo é clonar o projeto. 
+O primeiro passo é clonar o projeto 
 
-**1.** [Acesse o link do projeto]("colocar aqui o link")
+**1.** [Acesse o link do projeto]("https://github.com/Danielleelara/Promobit") e faça o clone do repositório. 
 
-**2.** Rodar o comando abaixo para instalar as dependências.
+**2.** Na pasta raiz do projeto, rodar o comando abaixo para instalar as dependências.
 
 npm install
+
+**3.** Em seguida na mesma pasta, rodar o comando abaixo para instalar o react router. 
+
+npm i react-router-dom@5.2.0
+
+**4.** Para instalar o Axios, rodar o comando seguinte:
+
+npm i axios
+
+**5.** Agora instale o styled components com o comando a seguir:
+
+ npm install --save styled-components
+
+**6.** Agora é só rodar o comando abaixo para rodar o projeto no Browser
+
+npm start
