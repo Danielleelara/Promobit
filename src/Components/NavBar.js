@@ -5,7 +5,7 @@ import Filter from "./Filter";
 
 
 const api_key = "7cbb88dd714f84168b91799865f574d3";
-const NavBar = ({onFilterChange }) => {
+const NavBar = () => {
     
     const [genres, setGenres]= useState([]);
 
@@ -24,7 +24,7 @@ const NavBar = ({onFilterChange }) => {
     <div className={styles.navbar_container}>
         <div className={styles.navbar_text}>
             <p className={styles.text1}>Milhões de filmes, séries e pessoas para descobrir. Explore Já </p>
-            <Filter genres={genres} onFilterChange={onFilterChange}/>
+            <Filter genres={genres} />
            
         </div>
        

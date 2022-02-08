@@ -13,4 +13,7 @@
     border-radius: 0.5em;
     list-style-type: none;
 }
+.card_title{
+    font-weight: bold;
+}
 

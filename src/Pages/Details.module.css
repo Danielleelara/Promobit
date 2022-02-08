@@ -44,10 +44,10 @@
 }
 
 .details_icon{
-
+    text-align: right;
     width: 60px;
     height: 60px;
-    
+    padding: 6px;
 }
 
 .details_trailer{
@@ -56,4 +56,5 @@
     padding: 50px;
 
 }
+
  

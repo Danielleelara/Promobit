@@ -71,7 +71,7 @@ const Details = () => {
       </section>
       {trailer && (
         <section className={styles.details_trailer}>
-          <h2>Trailler</h2>
+          <h1>Trailer</h1>
           <iframe
             title={movie.original_title}
             id="ytplayer"

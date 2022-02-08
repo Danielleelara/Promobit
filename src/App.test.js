@@ -1,6 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
+
+
 test('render the page title', () => {
   render(<App />);
   const linkElement = screen.getByText(/Milhões de filmes, séries e pessoas para descobrir. Explore Já/i);
@@ -13,5 +15,8 @@ test('render the filter', () => {
   const linkElement = screen.getByText(/FILTRE POR:/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+
+
 
 
