@@ -21,7 +21,7 @@ O projeto foi desenvolvido em ReactJs a partir da criação de uma SPA, usando r
 
 O primeiro passo é clonar o projeto 
 
-**1.** [Acesse o link do projeto](<a src="https://github.com/Danielleelara/Promobit">Clicando Aqui</a>) e faça o clone do repositório. 
+**1.** [https://github.com/Danielleelara/Promobit]("https://github.com/Danielleelara/Promobit") e faça o clone do repositório. 
 
 **2.** Na pasta raiz do projeto, rodar o comando abaixo para instalar as dependências.
 
