@@ -1,7 +1,7 @@
 ## O projeto
 
 O projeto foi desenvolvido em ReactJs a partir da criação de uma SPA, usando react-routes para a implementação das rotas, a biblioteca momentjs para a formatação das datas e o axios para a busca dos dados na Api. 
-![image](https://user-images.githubusercontent.com/78480991/161862593-e9aed1eb-ff2e-4ea9-ad71-5dd41cecba68.png)
+![image](https://user-images.githubusercontent.com/78480991/161862660-2ca6e8b4-8f18-49dc-82a0-93179916b7af.png)
 
 
 ## Requisitos de ambiente e dependências
